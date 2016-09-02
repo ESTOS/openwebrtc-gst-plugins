@@ -10,6 +10,7 @@ libgstsctp_1_5_la_CFLAGS = \
     $(GST_CFLAGS)
 
 libgstsctp_1_5_la_LIBADD = $(GST_LIBS) $(GST_BASE_LIBS)
+libgstsctp_1_5_la_LDFLAGS = $(GST_PLUGIN_LDFLAGS) -no-undefined
 
 libgstsctp_1_5_includedir = $(includedir)/gstreamer-1.5/gst/sctp
 libgstsctp_1_5_include_HEADERS = \
